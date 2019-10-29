@@ -1,0 +1,5 @@
+baseURL = "https://cryptomessaging.org/"
+languageCode = "en-us"
+title = "Cryptomessaging - Decentralized Instant Messaging"
+uglyURLs = true
+

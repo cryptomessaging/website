@@ -1,0 +1,112 @@
+div.csv-table {
+	background-image: url(/images/spinner.gif);
+  	background-size: cover;
+	width: 64px;
+	height: 64px;	
+}
+
+table.csv-table {
+	border-collapse: collapse;
+	border: 1px solid #444;
+}
+
+table.csv-table td {
+	padding: 5px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	vertical-align: top;
+}
+
+table.csv-table tr:first-child {
+	color: white;
+	background-color: #444;
+	vertical-align: bottom;
+}
+
+table.csv-table a {
+	color: blue;
+	text-decoration: underline;
+}
+
+table.csv-table .table-section {
+	background-color: #ddd;
+	font-weight: bold;
+}
+
+@media (max-width: 640px) {
+
+	#logo {
+		width: 20%;
+		float: left;
+		border-radius: 10%;
+		margin: 12px;
+	}
+
+	#navlinks {
+		background-color: #444;
+		list-style: none;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding: 5px;
+	}
+
+	#navlinks li {
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	#navlinks a {
+		color: white;
+		cursor: pointer;
+	}
+
+	.wide-only {
+		display: none  !important;
+	}
+
+	#main {
+		padding: 20px;
+	}
+
+	h1 {
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 641px) {
+	#masthead {
+		width: 20%;
+		float: left;
+		margin-top: 10%;
+		margin-right: 5%;
+	}
+
+	#logo {
+		width: 50%;
+		float: right;
+		border-radius: 10%;
+		margin-top: 40px;
+	}
+
+	#masthead-break {
+		clear: both;
+	}
+
+	#navlinks {
+		margin-top: 40px;
+		float: right;
+		text-align: right;
+		list-style: none;
+	}
+
+	#main {
+		float: left;
+		width: 60%;
+		padding: 20px;
+		margin-top: 10%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+}

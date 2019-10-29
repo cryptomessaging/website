@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content */
+
+#logo {
+	cursor: pointer;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+
+h2, a {
+	color: #1377aa;
+}
+
+sup {
+	font-size: .5em;
+}
+
+.intro {
+	font-size: 1.5em;
+	color: gray;
+	font-style: italic;
+}
+
+.no-bullets {
+	list-style-type: none;
+}
+
+/* Footer */
+
+#footer {
+	width: 100%;
+	background-color: #eee;
+	color: black;
+	font-size: 0.7em;
+}
+
+#footer > div {
+	width: 31%;
+	float: left;
+	margin: 1%;
+}
+
+#footer p {
+	margin-top: 0px;
+}

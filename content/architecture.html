@@ -1,0 +1,48 @@
+{
+	"layout": "single.html"
+}
+
+<h1>Architecture</h1>
+
+<p class="intro">
+	Cryptomessaging is a decentralized instant messaging system.
+</p>
+
+<p>
+	The cryptomessaging architecture is driven by three design tenets:
+	<ul>
+		<li><strong>Cryptographically Derived Identity</strong> such as accounts on Bitcoin, allows the creation of one or more chat ids for each person and enables operation without a userid.  This system lets people create identities without the need for a central user account authority.</li>
+
+		<li><strong>Decentralized Message Forwarding</strong> where there is no central server managing all accounts. Instead, thousands of servers managed by different people or organizations work together to deliver messages.</li>
+
+		<li><strong>Open Source</strong> where software can be reviewed by peers to quickly discover security issues and identify bad actors.</li>
+	</ul>
+</p>
+
+<h2>Network Architecture</h2>
+
+<p>
+	The following diagram is a simplified view of the different Cryptomessaging services and clients and how they interact:
+</p>
+
+<div>
+	<center>
+		<img width="100%" height="100%" src="https://docs.google.com/drawings/d/e/2PACX-1vT9a3uN5Sn9We6mHssq91FvuslLa4bPhrVatNhPKh6uXqTzgQbyHpBxKGzjQvreLZsHW6I55zYaezOu/pub?w=855&h=433" />
+	</center>
+</div>
+
+<p>
+	<ul>
+		<li><strong>iOS and Android apps</strong> provide the messaging interface to the person.</li>
+		
+		<li><strong>Keyrings</strong> store people's public and private keys.  These keyrings may exist on the client device, may be backed up by cloud offerings, or may be stored securely in remote servers.</li>
+
+		<li><strong>Messages</strong> are stored in the apps.</li>		
+
+		<li>Many <strong>Message Reflectors</strong> accept messages from Cryptomessaging apps and forward them to the appropriate clients.  For group chats, a single message may to sent to several different reflectors.</li>
+
+		<li><strong>Apple Push Service</strong> is the Apple Push Notification service.</li>
+
+		<li><strong>Android Push Service</strong> is the Google Firebase Cloud Messaging service.</li>
+	</ul>
+</p>			
